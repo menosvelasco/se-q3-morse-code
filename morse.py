@@ -12,15 +12,10 @@ Pause between words – is 7 time units long.
 __author__ = """ manuel velasco  John(SE Coach) Howard Post (SE Tutor)"""
 
 from morse_dict import MORSE_2_ASCII
-# hey_jude_morse = ".... . -.--   .--- ..- -.. ."
-""" ['....', ' ', '.', ' ', '-.--', '   ',
- '.---', ' ', '..-', ' ', '-..', ' ', '.'] """
-# MORSE_2_ASCII.get('....') == > 'H'
 
 
 def decode_morse(morse):
     MORSE_2_ASCII[''] = ' '
-    # space_s = "  "
     empty_string = ""
     list_morse_space = morse.split(' ')
     print(list_morse_space)
@@ -47,20 +42,6 @@ def decode_bits(bits):
     ).replace(
         '0' * two_bits, ''
     )
-
-    # for n, bit in enumerate(order):
-    #     if order[n:n+5] == '':
-    #         result += '-'
-    #     elif order[n] == '':
-    #         result += '.'
-    #     elif order[n] == '00':
-    #         result += ' '
-    #     elif order[n] == '0000000':
-    #         result += '  '
-    #     else:
-    #         result += '  '
-    # print(result)
-    # return result
 
 
 if __name__ == '__main__':
